@@ -1,7 +1,7 @@
 const inquirer = require('inquirer');
 
-async function main(){
-    try{
+async function main() {
+    try {
         const respuesta = await inquirer
             .prompt([
                 {
@@ -14,9 +14,14 @@ async function main(){
                     name: 'edad',
                     message: 'ingresa Tu Edad'
                 }
-            ]);
-        console.log("Respuesta", respuesta);
-    }catch (error){
+            ])
+            .then((respuesta) => {
+                console.log("Respuesta", respuesta);
+            })
+            .catch((error) => {
+                console.log('Error :',error)
+            })
+    } catch (error) {
         console.error(error)
     }
 }
