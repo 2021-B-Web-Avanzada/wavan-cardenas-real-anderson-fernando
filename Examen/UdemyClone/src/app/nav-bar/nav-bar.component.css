@@ -1,0 +1,15 @@
+.navbar-custom {
+  height: 55px;
+}
+
+.navbar-brand
+{
+  /*font-family: 'Lato', sans-serif;*/
+  /*color:grey;*/
+  font-size: 15px;
+
+}
+
+.icon-nav{
+  color:inherit;
+}

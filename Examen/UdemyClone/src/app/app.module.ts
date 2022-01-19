@@ -9,6 +9,7 @@ import { CourseCardComponent } from './course-card/course-card.component';
 import {AuthRoutingModule} from "./auth/auth-routing.module";
 import {AuthModule} from "./auth/auth.module";
 import { HomeComponent } from './home/home.component';
+import { NotFoundComponent } from './not-found/not-found.component';
 
 @NgModule({
   declarations: [
@@ -16,6 +17,7 @@ import { HomeComponent } from './home/home.component';
     NavBarComponent,
     CourseCardComponent,
     HomeComponent,
+    NotFoundComponent,
   ],
   imports: [
     AppRoutingModule,

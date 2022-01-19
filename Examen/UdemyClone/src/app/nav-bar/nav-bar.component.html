@@ -2,6 +2,73 @@
 <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+
+<nav class="navbar navbar-expand-lg navbar-custom navbar-light bg-light">
+
+  <a class="navbar-brand" routerLink="/home">
+    <img src="https://cdn2.downdetector.com/static/uploads/logo/UDEMY_3_tmE9Hc5.png" width="100" height="43" class="d-inline-block" alt="">
+  </a>
+  <a class="navbar-brand" href="#">Categorías</a>
+
+  <!--Cuadro de búsqueda-->
+  <form class="form-inline my-2 my-lg-0">
+    <input class="form-control mr-sm-2" type="search" placeholder="Busca cualquier cosa" aria-label="Search">
+    <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+  </form>
+
+  <!-- Accesos de udemy -->
+    <ul class="navbar-nav mr-auto ml-4">
+      <li class="nav-item active ml-2">
+        <a class="navbar-brand" href="#">Udemy Businees</a>
+      </li>
+      <li class="nav-item activate ml-2">
+        <a class="navbar-brand" href="#">Enseña en Udemy</a>
+      </li>
+      <li class="nav-item activate ml-2">
+        <a class="navbar-brand" href="#">Mi aprendizaje</a>
+      </li>
+    </ul>
+  <!--Íconos de Udemy-->
+  <ul class="navbar-nav mr-auto ml-2">
+
+    <!--Cart icon-->
+    <li class="nav-item active ml-1">
+      <a class="nav-item icon-nav" href="#">
+        <svg style="width:24px;height:24px" viewBox="0 0 24 24">
+          <path fill="currentColor" d="M17,18A2,2 0 0,1 19,20A2,2 0 0,1 17,22C15.89,22 15,21.1 15,20C15,18.89 15.89,18 17,18M1,2H4.27L5.21,4H20A1,1 0 0,1 21,5C21,5.17 20.95,5.34 20.88,5.5L17.3,11.97C16.96,12.58 16.3,13 15.55,13H8.1L7.2,14.63L7.17,14.75A0.25,0.25 0 0,0 7.42,15H19V17H7C5.89,17 5,16.1 5,15C5,14.65 5.09,14.32 5.24,14.04L6.6,11.59L3,4H1V2M7,18A2,2 0 0,1 9,20A2,2 0 0,1 7,22C5.89,22 5,21.1 5,20C5,18.89 5.89,18 7,18M16,11L18.78,6H6.14L8.5,11H16Z" />
+        </svg>
+      </a>
+    </li>
+
+    <!--Wishes icon-->
+    <li class="nav-item active ml-3">
+      <a class="nav-item icon-nav" href="#">
+        <svg style="width:24px;height:24px" viewBox="0 0 24 24">
+          <path fill="currentColor" d="M12.1 18.55L12 18.65L11.89 18.55C7.14 14.24 4 11.39 4 8.5C4 6.5 5.5 5 7.5 5C9.04 5 10.54 6 11.07 7.36H12.93C13.46 6 14.96 5 16.5 5C18.5 5 20 6.5 20 8.5C20 11.39 16.86 14.24 12.1 18.55M16.5 3C14.76 3 13.09 3.81 12 5.08C10.91 3.81 9.24 3 7.5 3C4.42 3 2 5.41 2 8.5C2 12.27 5.4 15.36 10.55 20.03L12 21.35L13.45 20.03C18.6 15.36 22 12.27 22 8.5C22 5.41 19.58 3 16.5 3Z" />
+        </svg>
+      </a>
+    </li>
+
+    <!--Notifications icon-->
+    <li class="nav-item active ml-3">
+      <a class="nav-item icon-nav" href="#">
+        <svg style="width:24px;height:24px" viewBox="0 0 24 24">
+          <path fill="currentColor" d="M21 6.5C21 8.43 19.43 10 17.5 10S14 8.43 14 6.5 15.57 3 17.5 3 21 4.57 21 6.5M11.5 22C12.61 22 13.5 21.11 13.5 20H9.5C9.5 21.11 10.4 22 11.5 22M18 12C17.84 12 17.67 12 17.5 12C17 12 16.5 11.92 16 11.79V17H7V10.5C7 8 9 6 11.5 6C11.68 6 11.85 6.03 12 6.05C12.1 5.06 12.45 4.14 13 3.37C12.92 2.6 12.28 2 11.5 2C10.67 2 10 2.67 10 3.5V4.18C7.13 4.86 5 7.43 5 10.5V16L3 18V19H20V18L18 16V12Z" />
+        </svg>
+      </a>
+    </li>
+
+    <!--User icon-->
+    <li class="nav-item active ml-3">
+      <a class="nav-item icon-nav" routerLink="/auth/user">
+        <svg style="width:24px;height:24px" viewBox="0 0 24 24">
+          <path fill="currentColor" d="M12,4A4,4 0 0,1 16,8A4,4 0 0,1 12,12A4,4 0 0,1 8,8A4,4 0 0,1 12,4M12,14C16.42,14 20,15.79 20,18V20H4V18C4,15.79 7.58,14 12,14Z" />
+        </svg>
+      </a>
+    </li>
+
+  </ul>
 
 
-<p>nav-bar works!</p>
+</nav>
