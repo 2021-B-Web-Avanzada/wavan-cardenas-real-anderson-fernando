@@ -13,13 +13,14 @@ const routes: Routes = [
     component: HomeComponent
   },
   {
+    path: 'notfound',
+    component: NotFoundComponent
+  },
+  {
     path: '**',
     component: HomeComponent
   },
-  {
-    path: 'not-found',
-    component: NotFoundComponent
-  }
+
 ];
 
 @NgModule({

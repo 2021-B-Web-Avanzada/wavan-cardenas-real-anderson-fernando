@@ -2,11 +2,73 @@
 <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+<div class="container-fluid">
+  <!--<div class = "row justify-content-center">-->
+  <div class="row justify-content-center tags">
+    <div class="col-1 justify-content-center">Desarrollo</div>
+    <div class="col-1 justify-content-center">Negocios</div>
+    <div class="col-1 justify-content-center">Finanzas</div>
+    <div class="col-2 justify-content-center">Desarrollo software</div>
+    <div class="col-1 mr-3 justify-content-center">Productividad </div>
+    <div class="col-2 justify-content-center">Desarrollo personal</div>
+    <div class="col-1 justify-content-center">Diseño</div>
+    <div class="col-1 justify-content-center">Marketing</div>
+  </div>
 
-Imagen esa
-<br>
-<p>home works!</p>
-<br>
+  <img src="/assets/img/info.PNG" alt="home">
+  <br>
+  <br>
+  <h2>Empecemos a aprender</h2>
+  <br>
+  <div class="row justify-content-center">
+      <app-course-card [nombre]="'Curso completo de IA con Python'"></app-course-card>
+      <app-course-card
+        [nombre]="'Curso de Estadística descriptiva con R'"
+        [srcimg]="'/assets/img/curso2.PNG'"
+      ></app-course-card>
+      <app-course-card
+        [nombre]="'Tensorflow 2.0: Guía completa'"
+        [srcimg]="'/assets/img/curso3.PNG'"
+      ></app-course-card>
+      <app-course-card
+        [nombre]="'Curso práctico de Django'"
+        [srcimg]="'/assets/img/curso4.PNG'"
+      ></app-course-card>
+  </div>
 
-<app-course-card></app-course-card>
-<app-course-card></app-course-card>
+  <br>
+  <h3>Cursos destacados sobre <strong style="color: #3F0DA5;">Angular</strong></h3>
+  <br>
+  <div class="row ml-5">
+    <div class="col-2 activate"><strong>Más populares</strong></div>
+    <div class="col-2">Nuevo</div>
+    <div class="col-2">Intermedio</div>
+    <div class="col-2">Avanzado</div>
+  </div>
+  <br>
+  <hr/>
+  <div class="row justify-content-center">
+    <app-course-card
+      [nombre]="'La web empieza aquí: Angular'"
+      [srcimg]="'/assets/img/curso5.PNG'"
+    ></app-course-card>
+    <app-course-card
+      [nombre]="'Angular - tu guía completa (2022)'"
+      [srcimg]="'/assets/img/curso6.PNG'"
+    ></app-course-card>
+    <app-course-card
+      [nombre]="'NgRx (with NgRx Data), complete guide'"
+      [srcimg]="'/assets/img/curso7.PNG'"
+    ></app-course-card>
+    <app-course-card
+      [nombre]="'Angular, aplicaciones web seguras'"
+      [srcimg]="'/assets/img/curso8.PNG'"
+    ></app-course-card>
+  </div>
+
+  <br>
+  <br>
+
+</div>
+
+
